@@ -1,28 +1,31 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import { PageHeader } from 'react-bootstrap';
-import { Home } from './index';
+import { PageHeader, Nav, NavItem } from 'react-bootstrap';
 import logo from '../img/best_pizza.png';
 
-class Nav extends Component {
+class NavBar extends Component {
   render() {
     return (
       <div className="header">
-
         <nav>
-          <PageHeader>
-            <Link to='/'>
-              <img src={logo} alt='Logo' id='logo'/>
-            </Link>
-            <Link to='/menu/'>Menu</Link>
-            <Link to='/story/'>Our Story</Link>
-            <Link to='/contact/'>Contact</Link>
-          </PageHeader>
+        <PageHeader>
+          <Nav>
+          <span>
+          <Link to='/'>
+            <img src={logo} alt='Logo' id='logo'/>
+          </Link>
+
+          <Link to='/menu/' className='nav-link'>Menu</Link>
+          <Link to='/story/' className='nav-link'>Story</Link>
+          <Link to='/order/' className='nav-link'>Order</Link>
+          <Link to='/contact/' className='nav-link'>Contact</Link>
+          </span>
+          </Nav>
+        </PageHeader>
         </nav>
-        
       </div>
     );
   }
 }
 
-export default Nav;
+export default NavBar;

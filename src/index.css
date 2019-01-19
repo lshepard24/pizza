@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
 }
@@ -8,13 +12,17 @@ img#logo {
 }
 
 .page-header {
+  display: flex;
   margin: 0;
-  padding: 0 1em;
+  padding: inherit;
   border: none;
 }
 
+.story {
+  width: 40em;
+}
+
 .header {
-  display: flex;
   background-color: #ead39c;
   padding: 0 1em 2em;
 }
@@ -24,9 +32,30 @@ img#logo {
   object-position: 100% 0;
   width: 18em;
   height: 14em;
+  margin: 0 1em;
+  border: solid;
+  border-width: .5em;
+  border-color: #7d5e3c;
 }
 
 .pizza-container {
   display: flex;
+  flex-direction: row;
   margin: 2em 0;
+}
+
+.nav-link {
+  font-family:'Fira Sans';
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 1em;
+  color: rgb(80, 79, 79);
+}
+
+.pizza h3 {
+  font-size: 1rem;
+  font-family: 'Fira Sans';
+  margin: 1rem;
+  text-align: center;
+  color: rgb(95, 63, 33);
 }
