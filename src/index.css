@@ -3,12 +3,17 @@ body {
 }
 
 img#logo {
-  height: 6em;
+  height: 2em;
   width: auto;
+}
+
+.page-header {
+  margin: 0;
+  padding: 0 1em;
 }
 
 .header {
   display: flex;
   background-color: #ead39c;
-  padding: 1em 1em;
+  padding: 0 1em 2em;
 }
