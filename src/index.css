@@ -10,10 +10,23 @@ img#logo {
 .page-header {
   margin: 0;
   padding: 0 1em;
+  border: none;
 }
 
 .header {
   display: flex;
   background-color: #ead39c;
   padding: 0 1em 2em;
+}
+
+.pizza img {
+  object-fit: cover;
+  object-position: 100% 0;
+  width: 18em;
+  height: 14em;
+}
+
+.pizza-container {
+  display: flex;
+  margin: 2em 0;
 }
