@@ -6,6 +6,8 @@ import { default as Veggie } from './pizzas/Veggie';
 import { default as Menu } from './Menu';
 import { default as Nav } from './Nav';
 import { default as Home } from './Home';
+import { default as Story } from './Story';
+import { default as Contact } from './Contact';
 
 export { 
   Cheese, 
@@ -15,5 +17,7 @@ export {
   Veggie, 
   Menu, 
   Nav, 
-  Home 
+  Home,
+  Story,
+  Contact
 };
